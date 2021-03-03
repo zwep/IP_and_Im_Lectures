@@ -701,11 +701,11 @@ fig.tight_layout()
 
 ### Convolution
 
-We are going to solve a deconvolution problem $Ku = f$, where $K$ is a *Toeplitz matrix* with elements
+We are going to solve a deconvolution problem $Ku = f$, where $K \in \mathbb{R} ^ {n \times n}$ is a *Toeplitz matrix* with elements
 
-$$k_{ij} = \frac{\exp({-a\cdot (i-j)^2})}{(n-1)\sqrt{\pi/a}},$$
+$$k_{ij} = \frac{\exp({-a\cdot (i-j)^2})}{(n-1)\sqrt{\pi/a}}, \ i,j = 1, \ldots, n,$$
 
-and we are given noisy measurements
+and $a \in \mathbb{R}_{>0}$. We are given noisy measurements
 
 $$f^{\delta} = Ku + e,$$
 
